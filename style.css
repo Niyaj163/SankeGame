@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@100..400&display=swap");
+/* font-family: "Playwrite FR Moderne", cursive; */
+
+body {
+  background: url(bg.jpg) no-repeat;
+  background-size: 100%;
+}
+
+.img {
+  position: absolute;
+  margin: 23vw 165vh;
+  height: 300px;
+}
+
+#board {
+  background: rgb(165, 227, 7);
+  width: 95vmin;
+  height: 85vmin;
+  border: 3px solid black;
+  margin: 40px 150px;
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+.txt {
+  position: absolute;
+  margin: 5vw 140vh;
+  color: white;
+  font-size: 30px;
+  width: 500px;
+  font-family: "Playwrite FR Moderne", cursive;
+}
+.head {
+  background: linear-gradient(rgb(164, 113, 177), rgb(153, 227, 106));
+  border: 2px solid rgb(34, 4, 34);
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+.food {
+  background: url(apple.png);
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.snake {
+  background-color: green;
+  border: 0.25vmin solid white;
+  border-radius: 12px;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 450px;
+  right: 540px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Playwrite FR Moderne", cursive;
+}
+
+#hiScore {
+  position: absolute;
+  top: 520px;
+  right: 400px;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Playwrite FR Moderne", cursive;
+}
